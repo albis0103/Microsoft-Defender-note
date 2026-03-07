@@ -63,9 +63,7 @@ note:<br>
 	:取得TGS後，離線破解TGS取的密碼<br>
 	e.g.在實際運作中：<br>
 MDE 會偵測到某個 Process（如 lsass.exe）被不正常讀取。<br>
-
 MDI 會偵測到網路流量中出現異常的 Kerberos Ticket 請求（TGS Request）。<br>
-
 Microsoft Defender XDR 會將這兩個事件關聯成同一個 Incident (事件)，告訴你：「攻擊者在 A 電腦偷了 Hash，然後正嘗試登入 B 電腦。」<br>
 **Intune**:microsoft的MDM方案，支援所有OS設備，透過configuration profile 把 onbroading封包與安全規則推到端點，設定防毒原則,ASR,EDR..<br>
 note:onbroad:代表設備加入MDM管理<br>
