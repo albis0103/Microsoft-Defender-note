@@ -99,5 +99,20 @@ P2適用<br>
 E5 (Enterprise)：大型企業版。<br>
 A5 (Academic)：教育版（學校、學術單位）。<br>
 GCC G5 (Government Community Cloud)：政府機關雲端版。<br>
-- MDC(Microsoft Defensder for Cloud APPs)
+- MDC(Microsoft Defensder for Cloud APPs)<br>
+  CASB(Cloud Access Security Broker)：透過reverse proxy，控制user與SaaS間使用（e.g.shadow IT 發現、SaaS使用狀況的可視化、所有SaaS威脅防護，以及資訊保護與合規評估)<br>
+  SSPM(SaaS Security Posture Management)<br>
+  ：提供SaaS安全狀態可視化，自動掃描SaaS安全性，將其與SaaS供應商所定最佳實務（如 CIS 基準）進行比對給出安全分數(secure score)。<br>
+  Advanced Threat Protection：透過policy偵測帳號異常<br>
+  note:policy<br>
+  威脅檢測<br>
+ - 活動政策：監控使用者操作(ex.未授權IP下載檔案）
+ - 異常檢測政策：透過UEBA行為分析，找出異常
+ - OAuth應用程式政策：審查第三方app請求權限
+ - 惡意軟體檢測：掃描cloud storage(ex.OneDrive, ..)惡意檔案
+ - 檔案政策：對檔案機密內容（個資、信用卡）執行治理（設定為私人）
+ - 訪問政策(Access)：登入階段攔截
+ - 會話政策(Session)：控制登入後活動(ex.禁止下載..)
+ - app發現政策：使用未經授權SaaS會通知，解決shadowIT
+  App to App Protection
 - Microsoft EntraID Protection
