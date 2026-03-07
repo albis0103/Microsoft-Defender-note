@@ -23,7 +23,12 @@ if 有MDE deploy sensor V3<br>
 if !MDE deploy sensor V2<br>
 設定window事件稽核<br>
 [window 事件稽核](https://learn.microsoft.com/en-us/defender-for-identity/deploy/configure-windows-event-collection#configure-ntlm-auditing)
-Okta:雲端身分與存取權限管理平台， 管理高價值身份，包括特權帳號與 API 令牌，因此，Okta 經常成為濫用或攻擊的目標。(其實是非微軟版的EntraID)<br>
+AD 稽核重點<br>
+- logon events:監控 Event ID 4624 (登入成功) 4625 (登入失敗)。Logon Type 3 (網路登入) 與 Logon Type 10 (遠端桌面)。<br>
+- account management:監控 4720 (建立使用者)、4728 (加入安全性群組，尤其是 Domain Admins)。
+- Kerberos 服務ticket: 監控 4768 (TGT 請求;ticket Granting Ticket, 給AS端) 與 4769 (服務票證請求;Ticket Granting Service, TGS端)，這是防範 Golden Ticket（竊取AS的HASH自己做Ticket) 攻擊的關鍵。<br>
+- 物件存取 (Object Access): 針對 File Server，啟動「檔案系統稽核」，監控敏感資料夾的讀取與刪除。<br>
+Okta:混合雲版的EntraID 把AD身份轉給各個SaaS（不只微軟）<br>
 核心功能:1.SSO(single sign-on)<br> 2.MFA <br>3.帳號生命週期管理 (Lifecycle Management) <br>4.通用目錄 (Universal Directory)<br>
 
 OKTA +　EntraID + AD<br>
