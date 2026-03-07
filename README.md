@@ -79,5 +79,21 @@ step:<br>
 3.full deployment:，Intune or SCCM大規模部屬，onbroad測試<br>
 ![Microsoft XDR](https://learn.microsoft.com/en-us/defender-xdr/media/zero-trust-with-microsoft-365-defender/m365-zero-trust-architecture-defender.png#lightbox)
 - MDO(Microsoft Defensder for Office 365)
+**EOP 基礎方案(Exchange Online Protection)**
+  ：雲端mail內建保護功能（防惡意程式、反垃圾mail、基礎反釣魚）<br>
+  核心技術：連線filter(chick IP 手動加list）、租戶允許封鎖名單(check IP, URL, hash, 寄件者地址, 網域), ZAP(zero-hour Auto page;將事後發現的惡意郵件區隔)<br>
+  **Plan1**
+  ：safe link（攔截惡意連結）、safe attachment（避免惡意附件，零時差保護）、real time Detection（透過反釣魚政策alert基礎攔截報告，P1專屬）<br>
+note:<br>
+：傳統把整封mail(mail+附件)送到sandbox檢測完才給user，太久<br>
+Dynamic Deliver：safe attechment的設定，讓user先看mail再給附件<br>
+safelink具備影像辨識功能，防止QR code phishing<br>
+
+平台延伸性： 服務描述強調 MDO 不僅保護 Exchange，還包含 SharePoint Online、OneDrive for Business 和 Microsoft Teams。這在 Plan 1 就已經包含。<br>
+  **Plan2**
+  ：safe link、safe attachment、Threat Explorer（除了alert報告，有進階塞選跟批量修復，P2專屬）、AIR(自動調查，提出修補建議，P2專屬）、Attack Stimulation（對員工釣魚演練，P2專屬）<br>
+安全文件 (Safe Documents)： 與ＭＤＥ整和，在開啟 Office 文件前自動掃描，防止文件內嵌的威脅，P2專屬）。<br>
+note<br>
+priority account protection：VIP帳號(e.g.CEO, CFO)在threat explorer會被加強行為分析避免BEC（商業郵件詐騙）<br>
 - MDC(Microsoft Defensder for Cloud APPs)
 - Microsoft EntraID Protection
