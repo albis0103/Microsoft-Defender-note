@@ -99,12 +99,15 @@ E5 (Enterprise)：大型企業版。<br>
 A5 (Academic)：教育版（學校、學術單位）。<br>
 GCC G5 (Government Community Cloud)：政府機關雲端版。<br><br>
 - MDC(Microsoft Defensder for Cloud APPs)<br>
-  CASB(Cloud Access Security Broker)：透過reverse proxy，控制user與SaaS間使用（e.g.shadow IT 發現、SaaS使用狀況的可視化、所有SaaS威脅防護，以及資訊保護與合規評估)<br>
-  SSPM(SaaS Security Posture Management)<br>
-  ：提供SaaS安全狀態可視化，自動掃描SaaS安全性，將其與SaaS供應商所定最佳實務（如 CIS 基準）進行比對給出安全分數(secure score)。<br>
-  Advanced Threat Protection：透過policy偵測帳號異常<br>
-  [note]:policy<br>
-  威脅檢測<br>
+  **CASB(Cloud Access Security Broker)**(架構層面)：透過reverse proxy，控制user與SaaS間使用，但依賴EntraID（e.g.shadow IT 發現、SaaS使用狀況的可視化、所有SaaS威脅防護，以及資訊保護與合規評估)<br>
+  **Discover SaaS application**<br>：分析網路流量log，便是組織用哪些SaaS，解決shadow IT，對應[note]app發現政策。<br>
+  **information protection**<br>：自動對檔案夾標籤或變更分享權限，確保雲端App中敏感資訊安全。對應[note]檔案政策<br>
+  **SSPM(SaaS Security Posture Management)** <br>
+  ：提供SaaS安全狀態可視化，自動掃描SaaS安全性與SaaS供應商所定最佳實務（如 CIS 基準）進行比對給出安全分數(secure score)。<br>
+  **Continuous Theat Protection**<br:透過UEBA偵測異常活動（勒索軟體、帳號盜用..)。對應[note]靜態：活動政策，動態：異常檢測政策(UEBA)、惡意軟體檢測<br>
+**App to app protection**<br>：透過管理OAuth權限，監控評估第三方App。對應[note]OAuth應用程式政策<br>
+[note]:UEBA(User and Entity Behavier Analytics):透過機器學習與大數據分析觀察User與Entity(ex.server, router..)的行為異常
+  [note]:policy類型<br>
  - 活動政策：監控使用者操作(ex.未授權IP下載檔案）
  - 異常檢測政策：透過UEBA行為分析，找出異常
  - OAuth應用程式政策：審查第三方app請求權限
@@ -113,5 +116,4 @@ GCC G5 (Government Community Cloud)：政府機關雲端版。<br><br>
  - 訪問政策(Access)：登入階段攔截
  - 會話政策(Session)：控制登入後活動(ex.禁止下載..)
  - app發現政策：使用未經授權SaaS會通知，解決shadowIT
-  App to App Protection
 - Microsoft EntraID Protection
