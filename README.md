@@ -5,7 +5,12 @@
 Microsoft 365 Defender:扮演XDR角色統一MDE, MDI, MDO, MDC EntraID的signal於單一平台管理<br>
 各自扮演腳色:KILL CHAIN EXAMPLE<br>
 *偵測->武器化->遞送*->**(MDO)**->*利用*->**(MDE)**->安裝->*指揮與控制*->**(MDI & MDC)**->*行動*<br>
+MDI: 熟記 **Event ID 4768/4769**，這是區分身分攻擊的關鍵。<br>
+MDE: 區分 P1 (基礎保護) 與 P2 (進階 EDR/Hunting)。<br>
+MDO: Dynamic Delivery 是解決 Safe Attachment 延遲的最佳方案。<br>
+MDC: 記API 模式 (非即時/深度) 與 Proxy 模式 (即時/Web Only) 的取捨(Web Only 的限制，MDC 搭配 MDE 收集端點 Log解決shadow IT)。<br>
 
+Sentinel: SIEM = 大腦 (看)；SOAR = 手腳 (動)。
 - **MDI(Microsoft Defensder for Identity)**
 	主要是監控地端(on-premises)AD 的流量。<br>
 Sensor 是安裝在 地端 Domain Controller (DC) 或 AD FS 上。進行流分析(e.g. K8s, DNS, PRC, SMB, ..etc)與入口網站監控以確認身分，偵測橫向移動或暴力破解等駭客攻擊。<br>
