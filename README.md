@@ -93,8 +93,7 @@ safelink具備影像辨識功能，防止QR code phishing<br>
   **Plan2**
   ：safe link、safe attachment、Threat Explorer（除了alert報告，有進階塞選跟批量修復，P2專屬）、AIR(自動調查，提出修補建議，P2專屬）、Attack Stimulation（對員工釣魚演練，P2專屬）<br>
 安全文件 (Safe Documents)： 與ＭＤＥ整和，在開啟 Office 文件前自動掃描，防止文件內嵌的威脅，P2專屬）。<br>
-[note]<br>
-priority account protection：VIP帳號(e.g.CEO, CFO)在threat explorer會被加強行為分析避免BEC（商業郵件詐騙）<br>
+[note]priority account protection：VIP帳號(e.g.CEO, CFO)在threat explorer會被加強行為分析避免BEC（商業郵件詐騙）<br>
 P2適用<br>
 E5 (Enterprise)：大型企業版。<br>
 A5 (Academic)：教育版（學校、學術單位）。<br>
