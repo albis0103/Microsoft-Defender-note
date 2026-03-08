@@ -104,8 +104,8 @@ GCC G5 (Government Community Cloud)：政府機關雲端版。<br><br>
   **SSPM(SaaS Security Posture Management)** <br>
   ：提供SaaS安全狀態可視化，自動掃描SaaS安全性與SaaS供應商所定最佳實務（如 CIS 基準）進行比對給出安全分數(secure score)。<br>
   **Continuous Theat Protection**<br:透過UEBA偵測異常活動（勒索軟體、帳號盜用..)。對應[note]靜態：活動政策，動態：異常檢測政策(UEBA)、惡意軟體檢測<br>
-**App to app protection**<br>：透過管理OAuth權限（MDC透過API抓取第三方App申請的Scope)，監控評估第三方App。對應[note]OAuth應用程式政策<br>
-[note]:UEBA(User and Entity Behavier Analytics):透過機器學習與大數據分析觀察User與Entity(ex.server, router..)的行為異常
+**App to app protection**<br>：透過管理OAuth權限（MDC透過API抓取第三方App申請的Scope)，監控評估第三方App。對應[note]OAuth應用程式政策<br><br>
+[note]:UEBA(User and Entity Behavier Analytics):透過機器學習與大數據分析觀察User與Entity(ex.server, router..)的行為異常<br>
   [note]:policy類型<br>
  - 活動政策：監控使用者操作(ex.未授權IP下載檔案）
  - 異常檢測政策：透過UEBA行為分析，找出異常
@@ -114,7 +114,7 @@ GCC G5 (Government Community Cloud)：政府機關雲端版。<br><br>
  - 檔案政策：對檔案機密內容（個資、信用卡）執行治理（設定為私人）
  - 訪問政策(Access)：登入階段攔截
  - 會話政策(Session)：控制登入後活動(ex.禁止下載..)
- - app發現政策：使用未經授權SaaS會通知，解決shadowIT<br>
+ - app發現政策：使用未經授權SaaS會通知，解決shadowIT<br><br>
 **整合 SIEM (Microsoft Sentinel)**
 MDC 透過 API 將 MDC Apps整合Microsoft Sentinel (可擴展的雲端原生 SIEM 與 SOAR) ，實現警示與發現資料的集中監控。<br>
 SIEM(Security Information and Event Management)<br>：在偵測 (Detect)、調查 (Investigate)階段，收集MDI, MDE, MDC的log進行關聯分析，生成alert
