@@ -81,7 +81,7 @@ step:<br>
 - MDO(Microsoft Defensder for Office 365)
 **EOP 基礎方案(Exchange Online Protection)**
   ：雲端mail內建保護功能（防惡意程式、反垃圾mail、基礎反釣魚）<br>
-  核心技術：連線filter(chick IP 手動加list）、租戶允許封鎖名單(check IP, URL, hash, 寄件者地址, 網域), ZAP(zero-hour Auto page;將事後發現的惡意郵件區隔)<br><br>
+  核心技術：連線filter(chick IP 手動加list）、租戶允許封鎖名單(check IP, URL, hash, 寄件者地址, 網域), ZAP(zero-hour Auto purge;將事後發現的惡意郵件自動清除)<br><br>
   **Plan1**
   ：safe link（攔截惡意連結）、safe attachment（避免惡意附件，零時差保護）、real time Detection（透過反釣魚政策alert基礎攔截報告，P1專屬）<br>
 note:<br>
