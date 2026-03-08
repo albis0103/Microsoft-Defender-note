@@ -114,7 +114,7 @@ GCC G5 (Government Community Cloud)：政府機關雲端版。<br><br>
  - 檔案政策：對檔案機密內容（個資、信用卡）執行治理（設定為私人）
  - 訪問政策(Access)：登入階段攔截
  - 會話政策(Session)：控制登入後活動(ex.禁止下載..)
- - app發現政策：使用未經授權SaaS會通知，解決shadowIT
+ - app發現政策：使用未經授權SaaS會通知，解決shadowIT<br>
 **整合 SIEM (Microsoft Sentinel)**
 MDC 透過 API 將 MDC Apps整合Microsoft Sentinel (可擴展的雲端原生 SIEM 與 SOAR) ，實現警示與發現資料的集中監控。<br>
 SIEM(Security Information and Event Management)<br>：在偵測 (Detect)、調查 (Investigate)階段，收集MDI, MDE, MDC的log進行關聯分析，生成alert
