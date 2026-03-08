@@ -88,7 +88,6 @@ note:<br>
 ：傳統把整封mail(mail+附件)送到sandbox檢測完才給user，太久<br>
 Dynamic Deliver：safe attechment的設定，讓user先看mail再給附件<br>
 safelink具備影像辨識功能，防止QR code phishing<br>
-
 平台延伸性： 服務描述強調 MDO 不僅保護 Exchange，還包含 SharePoint Online、OneDrive for Business 和 Microsoft Teams。這在 Plan 1 就已經包含。<br><br>
   **Plan2**
   ：safe link、safe attachment、Threat Explorer（除了alert報告，有進階塞選跟批量修復，P2專屬）、AIR(自動調查，提出修補建議，P2專屬）、Attack Stimulation（對員工釣魚演練，P2專屬）<br>
