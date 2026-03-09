@@ -122,6 +122,6 @@ GCC G5 (Government Community Cloud)：政府機關雲端版。<br><br>
  - app發現政策：使用未經授權SaaS會通知，解決shadowIT<br><br>
 **整合 SIEM (Microsoft Sentinel)**
 MDC 透過 API 將 MDC Apps整合Microsoft Sentinel (可擴展的雲端原生 SIEM 與 SOAR) ，實現警示與發現資料的集中監控。<br>
-SIEM(Security Information and Event Management)<br>：在偵測 (Detect)、調查 (Investigate)階段，收集MDI, MDE, MDC的log進行關聯分析，生成alert
+SIEM(Security Information and Event Management)<br>：在偵測 (Detect)、調查 (Investigate)階段，收集MDI, MDE, MDC的log進行關聯分析，生成alert<br>
 SOAR(Security Orchestration, Automation, and Response)<br>：在回應 (Respond)、復原 (Recover)階段，根據alert自動跨產品動作
 - Microsoft EntraID Protection
