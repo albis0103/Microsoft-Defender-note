@@ -137,5 +137,10 @@ SOAR(Security Orchestration, Automation, and Response)<br>：在回應 (Respond)
 | **預估總價** | 約 $60 (不含 Copilot) | $99 (全包) |
 
 <br>
-[note]Work IQ
-：建立在Microsoft Graph上的語義索引(Semantic Index), 實現關聯性理解與風格模仿
+[note]Work IQ<br>
+：建立在Microsoft Graph上的語義索引(Semantic Index), 實現關聯性理解與風格模仿<br>
+<br>
+copilot適合coding
+1.長應用於github fine-tune
+2.
+
