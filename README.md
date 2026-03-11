@@ -132,6 +132,10 @@ SOAR(Security Orchestration, Automation, and Response)<br>：在回應 (Respond)
 | **Copilot 授權** | 需額外加購 ($30/月) | 直接內含，不需額外付費 |
 | **AI 代理管理** | 基本 Agent 使用 | Agent 365：具備 AI 員工身分管理、監控與審核功能 |
 | **模型選擇** | 以 GPT 模型為主 | 多模型多樣性：包含 Claude 等第三方模型使用權 |
-| **安全防護** | Defender, Purview (已是頂尖) | Entra Suite 完整版：含私人存取、網際網路存取、進階身分保護 |
+| **安全防護** | MDE/MDO, Purview (靜態, 依規則) | Defender, Entra suit（依身份ZTNA, 提示注入防禦, Purview（Sensitive Tag, 與Data masking) |
 | **Work IQ** | 無 | Work IQ 記憶系統：AI 會學習公司特有的工作風格與跨部門脈絡 |
 | **預估總價** | 約 $60 (不含 Copilot) | $99 (全包) |
+
+<br>
+[note]Work IQ
+：建立在Microsoft Graph上的語義索引(Semantic Index), 實現關聯性理解與風格模仿
