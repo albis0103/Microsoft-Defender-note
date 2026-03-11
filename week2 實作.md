@@ -11,4 +11,10 @@ GPO群組原則存放於DC之sysval(C:\Windows\SYSVOL\sysvol\[DomainName]\Polici
 是 DC 間同步設定的核心目錄。以後建了 第二台 DC，兩台 DC 會透過 DFSR (Distributed File System Replication) 自動同步這個資料夾裡的 GPO 設定。<br>
 GPO只能以OU(Organization Unit)為單位，用ADUC(Activity Directory User and Computer)<br>
 預設的 Users 和 Computers 資料夾： 這兩個在 ADUC 裡圖示長得像資料夾的，其實是「容器 (Container)」，它們不能連結 GPO。<br>
-正確做法： 你必須在 ADUC 裡按右鍵「新建 > 組織單位 (OU)」，把你的 Client01 移進去，GPO 才會對它生效。
+正確做法： 你必須在 ADUC 裡按右鍵「新建 > 組織單位 (OU)」，把你的 Client01 移進去，GPO 才會對它生效。<br>
+<br>
+03/11<br>
+hyper-v virtual switch<br>
+ - External: internet -> VM
+ - Internal: Host -> VM
+ - Private:VM -> VM
