@@ -125,3 +125,12 @@ MDC 透過 API 將 MDC Apps整合Microsoft Sentinel (可擴展的雲端原生 SI
 SIEM(Security Information and Event Management)<br>：在偵測 (Detect)、調查 (Investigate)階段，收集MDI, MDE, MDC的log進行關聯分析，生成alert<br>
 SOAR(Security Orchestration, Automation, and Response)<br>：在回應 (Respond)、復原 (Recover)階段，根據alert自動跨產品動作
 - Microsoft EntraID Protection
+<br><br>
+| 比較項目 | Microsoft 365 E5 (傳統旗艦) | Microsoft 365 E7 (AI 旗艦) |
+| :--- | :--- | :--- |
+| **Copilot 授權** | 需額外加購 ($30/月) | **直接內含**，不需額外付費 |
+| **AI 代理管理** | 基本 Agent 使用 | **Agent 365**：具備 AI 員工身分管理、監控與審核功能 |
+| **模型選擇** | 以 GPT 模型為主 | **多模型多樣性**：包含 Claude 等第三方模型使用權 |
+| **安全防護** | Defender, Purview (已是頂尖) | **Entra Suite 完整版**：含私人存取、網際網路存取、進階身分保護 |
+| **Work IQ** | 無 | **Work IQ 記憶系統**：AI 會學習公司特有的工作風格與跨部門脈絡 |
+| **預估總價** | 約 $60 (不含 Copilot) | **$99 (全包)** |
