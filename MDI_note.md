@@ -14,7 +14,7 @@ Install-WindowsFeature -Name GPMC, RSAT-AD-PowerShell -IncludeManagementTools
 
 # 生成報告 (將 internal\你的服務帳號 替換為實際使用的帳號)
 New-MDIConfigurationReport -Path "C:\Reports" -Mode Domain -Identity "internal\你的服務帳號" -OpenHtmlReport
-'''
+```
 
 ### 自動化原則部署 (GPO & AD Object)
 
