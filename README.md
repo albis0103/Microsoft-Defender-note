@@ -140,5 +140,6 @@ SOAR(Security Orchestration, Automation, and Response)<br>：在回應 (Respond)
 [note]Work IQ<br>
 ：建立在Microsoft Graph上的語義索引(Semantic Index), 實現關聯性理解與風格模仿<br>
 <br>
-
+Single-event alert : 一次違規，系統會alert一次。不會合併多個事件。E1、E3、F1、G1、G3<br>
+Aggregated alert : 違規次數再依訂時間超出閥值才發出alert，必須E5、G5訂閱
 
